@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+
+<head>
+  <title>Open Canvas</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A web-based digital platform designed for users with ADHD">
+  <meta name="keywords" content="ADHD, creativity, neurodiversity, art, creative, painting, self-expression, drawing app">
+  <meta name="author" content="Hannah Lorena">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="p5.js"></script>
+  <script src="p5.sound.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <!--Header and Navigation Bar-->
+  <nav class="nav-bar">
+    <ul>
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="canvas.html"><b>Canvas</b></a></li>
+    </ul>
+  </nav>
+  <div class="app-container">
+    <div id="canvas"></div>
+
+    <div class="controls">
+      <div class="title">
+        <p class="palette-text">Artist's Palette</p>
+      </div>
+      <!--Brushes-->
+
+      <div class="brushtype">
+        <label for="pen-pencil">
+          <p class="palette-text">Pencil Tool</p>
+          <img class="arttool" src="images/pencil-tool.png" title="pencil tool" alt="pencil tool">
+        </label>
+
+        <input type="radio" name="tool-type" id="pen-pencil" checked>
+        <label for="pen-brush">
+          <p class="palette-text">Rainbow Brush Tool</p>
+          <img class="arttool" src="images/brush-tool.png" title="rainbow brush tool" alt="rainbow brush tool">
+        </label>
+        <input type="radio" name="tool-type" id="pen-brush">
+      </div>
+
+      <!--Shape Stamps-->
+      <div class="shapetype">
+        <label for="shape-square">
+          <p class="palette-text">Square Stamp</p>
+          <img class="arttool" src="images/stamp-tool.png" title="square stamp tool" alt="square stamp tool">
+        </label>
+        <input type="radio" name="tool-type" id="shape-square" checked>
+        <label for="shape-triangle">
+          <p class="palette-text">Circle Stamp</p>
+          <img class="arttool" src="images/stamp-tool.png" title="circle stamp tool" alt="circle stamp tool">
+        </label>
+        <input type="radio" name="tool-type" id="shape-circle">
+      </div>
+
+      <!--Parameters-->
+      <div class="size">
+        <label for="tool-size">
+          <p class="palette-text">Size</p>
+          <img class="arttool" src="images/size-tool.png" title="size selector" alt="size selector">
+        </label>
+        </label>
+        <input type="range" id="tool-size" min="1" max="200" value="10">
+      </div>
+
+      <div class="color">
+        <label for="tool-color">
+          <p class="palette-text">Color</p>
+          <img class="arttool" src="images/color-tool.png" title="circle stamp selector" alt="colour  selector">
+        </label>
+        </label>
+        <input type="color" id="tool-color" value="#000000"></div>
+
+    </div>
+  </div>
+
+  <div class="instructions-container">
+    <h2>Instructions</h2>
+    <p>Use the creative prompt to draw the first image that comes to mind and try to focus on the task for a full minute. Use the timer to keep on-track and once you've reached a full 60 seconds of creative focus, you get a 5 star reward!</p><br>
+    <p><b>Want to start again?</b> Press [DELETE/BACKSPACE] to clear your canvas and start over with a new prompt.</p><br>
+    <p><b>Looking to challenge your memory and add a little spontaneity to the drawing challenge?</b> Press [TAB] to remove the creative prompt and change the canvas to an unexpected colour!</p><br>
+    <p><b>Want a copy of your artwork?</b> To export your drawing click [Save Canvas] and download a copy to print or share on social media!</p><br>
+
+    <h2>Tips</h2>
+    <p>When using the pencil tool, make sure to keep the size at the smallest setting to avoid an emphasized starting point.</p><br>
+    <p>When using the stamp tools, change the colour and increase the size to see the outline of each shape.</p><br>
+    <p>Most importantly, <b>have fun and let your creativity lead the way!</b></p>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <ul class="footer-nav-container">
+      <li class="footer-nav"><a class="footer-link" href="index.html">Home</a></li>
+      <li class="footer-nav"><a class="footer-link" href="canvas.html">Canvas</a></li>
+    </ul>
+
+    <ul class="footer-social">
+      <li class="social-item"><a class="social-link" href="#" target=”_blank”><img class="icon" src="images/facebook.png" title="facebook" alt="facebook"></a></li>
+
+      <li class="social-item"><a class="social-link" href="#" target=”_blank”> <img class="icon" src="images/instagram.png" title="instagram" alt="instagram"></a></li>
+
+      <li class="social-item"><a class="social-link" href="#" target=”_blank”><img class="icon" src="images/twitter.png" title="twitter" alt="twitter"></a></li>
+    </ul>
+
+    <div class="copyright-container">
+      <p class="copyright-text">&copy; Copyright Hannah Lorena 2022. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

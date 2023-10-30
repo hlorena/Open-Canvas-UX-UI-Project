@@ -1,0 +1,415 @@
+/*Global Styles*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Global Text Styles*/
+h1 {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 6rem;
+  color: #333333;
+}
+
+h2 {
+  margin: 0 0 2% 0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5rem;
+  color: #C97BAE;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+p {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.7 rem;
+  color: #4D4D4D;
+  line-height: 1.5rem;
+}
+
+/*Global Navigation*/
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 5% 5% 5% 0%;
+  display:flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-item {
+  padding-left: 5%;
+}
+
+a.nav-link {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  color: #333333;
+  text-decoration: none;
+}
+
+a.nav-link:visited {
+  color: #4D4D4D;
+}
+
+a.nav-link:hover {
+  color: #FC91CD;
+  text-decoration: underline;
+}
+
+/*Global Button*/
+button {
+  padding: 2% 3%;
+  border: none;
+  text-decoration: none;
+  background-color: #F7F27E;
+  color: #333333;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/*Global Footer*/
+footer {
+  background-color: #272E30;
+  justify-content: center;
+}
+
+.footer-nav-container {
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0 5% 0 5%;
+}
+
+.footer-link {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.footer-link:visited {
+  color: #ffffff;
+}
+
+a.footer-link:hover {
+  color: #FC91CD;
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0 15% 5% 15%;
+}
+
+.social-link {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.icon {
+  padding: 0 20% 0 20%;
+  width: 50%
+}
+
+.copyright-container {
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.copyright-text {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  line-height: 1.5rem;
+}
+
+/*---Index*/
+/*Hero*/
+.hero-container {
+  padding-top: 15%;
+  background-image: url(images/gradient.png);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.hero-text-container {
+  padding-left: 10%;
+}
+
+p.hero-text {
+  padding: 3% 0 20% 2%;
+  font-size: 1.5rem;
+}
+
+.intro-container {
+  padding: 10% 20% 10% 20%;
+}
+
+/*Intro*/
+.intro-image {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.intro-text {
+  background-color: #ffffff;
+}
+
+/*Coachmarks*/
+
+.coachmark-container {
+  padding: 10% 20% 10% 20%;
+  background-color: #9BCDD9;
+}
+
+.coachmark-image-container {
+  padding-top: 10%;
+}
+
+.coachmark-image1 {
+  width: 100%;
+}
+
+.coachmark-image2 {
+  display: none;
+}
+
+.features-container {
+  padding: 10% 20% 10% 20%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/*Features*/
+
+.feature-icon {
+  padding: 10% 25% 10% 25%;
+  width: 50%;
+}
+
+hr {
+  margin-bottom: 10%;
+}
+
+.cta-container {
+  padding: 10% 30% 10% 30%;
+  display: flex;
+  justify-content: center;
+}
+
+/*---Canvas*/
+
+.app-container {
+  padding: 70% 10% 20% 10%;
+  background-color: #9BCDD9;
+}
+
+.canvas-container {
+  display: flex;
+}
+
+#canvas {
+  width: 100%;
+  margin: 0;
+  overflow: scroll;
+}
+
+.controls {
+  width: 100%;
+  margin-top: 3%;
+  padding: 5% 3%;
+  background-color: #272E30;
+}
+
+.palette-text {
+  color: #ffffff;
+}
+
+.arttool {
+  width: 10%;
+}
+
+.instructions-container {
+  padding: 5% 20%;
+}
+
+/*--------------------Media Queries - Tablet*/
+@media only screen and (min-width: 760px) {
+
+/*---Canvas*/
+
+.interface-container {
+  padding: 15% 0;
+  background-color: #9BCDD9;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.app-container {
+  padding: 30% 10%;
+  background-color: #9BCDD9;
+}
+
+/*--------------------Media Queries - Desktop*/
+@media only screen and (min-width: 1000px) {
+
+/*Text Styles*/
+  ul {
+    padding: 2% 5% 2% 0%;
+  }
+
+  h1 {
+    font-size: 10rem;
+  }
+
+/*Footer*/
+  .footer-nav-container {
+    padding: 5% 0 3% 0;
+    text-align: center;
+  }
+
+  .footer-social {
+    padding: 0 40%;
+    text-align: center;
+  }
+
+  .icon {
+    padding: 0;
+  }
+
+  li.social-item {
+    padding: 0;
+  }
+
+  .copyright-container {
+    padding: 3% 0 5% 0;
+  }
+
+/*---Index*/
+/*Intro*/
+  .intro-container {
+    padding: 5% 15%;
+    display: flex;
+  }
+
+  .intro-image-container {
+    width: 100%;
+  }
+
+  .intro-image {
+    margin: 0;
+  }
+
+  .intro-text {
+    padding: 0 0 0 5%;
+  }
+
+  hr {
+    display: none;
+  }
+
+/*Coachmarks*/
+  .coachmark-container {
+    padding: 0;
+  }
+
+  .coachmark-text {
+    padding: 5% 10% 0 10%;
+  }
+
+  .coachmark-image-container {
+    padding: 5%;
+  }
+
+  .coachmark-image1 {
+    display: none;
+  }
+
+  .coachmark-image2 {
+    display: block;
+    width: 100%;
+  }
+
+/*Features*/
+  .features-container {
+    display: flex;
+    padding: 10% 5% 0 5%;
+  }
+
+  .feature {
+    padding: 0 5%;
+  }
+
+/*Call to Action*/
+
+  .cta-container {
+    padding: 5% 0;
+  }
+
+/*---Canvas*/
+
+#canvas {
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+}
+
+.title {
+  padding-bottom: 15%;
+}
+
+.app-container {
+  padding: 25% 10% 5% 10%;
+  background-color: #9BCDD9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.controls {
+  width: 20%;
+  margin-left: 3%;
+  padding: 5% 3%;
+  background-color: #272E30;
+  overflow: scroll;
+}
+
+.palette-text {
+  color: #ffffff;
+}
+
+.actions {
+  padding-top: 20%;
+}
+
+.action-button{
+  margin-top: 5%;
+}
+}
